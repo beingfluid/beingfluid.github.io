@@ -1,82 +1,121 @@
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Being Fluid">
+    <meta name="author" content="Vishal Ingle">
+   
+    <title>Being Fluid</title>
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
+ <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <title>Being Fluid</title>
-        <link rel="stylesheet" href="css/index.css">
-    </head>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-    <body>
-        <div>
-<nav class="navbar navbar-expand navbar-dark fixed-top">
-    <a class="navbar-brand  mt-1" href="#">Being Fluid</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="btn btn-danger ml-2 mt-1" href="#">About me<span class="sr-only">(current)</span></a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="btn btn-primary ml-2 mt-1" href="/pdf/Resume_Vishal Ingle_v2.pdf">My resume</a>
-            </li>
-            
-             <li class="nav-item">
-                <a class="btn btn-primary ml-2 mt-1" href="/Certifications/">Certifications</a>
-            </li>
-            <!--
-<li class="nav-item dropdown ml-2  mt-1">
-                <a class="btn btn-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Certifications
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="">Code Editor 1</a>
-                </div>
-            </li>
--->
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-            <li class="nav-item dropdown ml-2  mt-1">
-                <a class="btn btn-primary dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Blogs
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/IntegrateNow/">IntegrateNow</a>
-                    <a class="dropdown-item" href=" https://howtoreadthedocs.blogspot.com/">How to read the Docs</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="https://beingfluid.blogspot.com/">Being Fluid</a>
-                    <a class="dropdown-item" href="https://connectinghearts2013.blogspot.com/">Connecting Hearts</a>
-                    <a class="dropdown-item" href="https://selfiepoetry2017.blogspot.com/">Selfie Poetry</a>
-                </div>
-            </li>
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
 
-        </ul>
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
 
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Being Fluid</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#">About me</a>
+        <a class="nav-link fw-bold py-1 px-0" href="docs/Resume_Vishal Ingle.pdf">Resume</a>
+        <a class="nav-link fw-bold py-1 px-0 dropdown"  href="#" id="navbarDropdown" data-toggle="dropdown">Blogs</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/IntegrateNow/">IntegrateNow</a>
+          <a class="dropdown-item" href="/You-Dont-Know-SN-APIs/">You Dont Know SN APIs</a>
+          <a class="dropdown-item" href=" https://howtoreadthedocs.blogspot.com/">How to read the Docs</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://beingfluid.blogspot.com/">Being Fluid</a>
+          <a class="dropdown-item" href="https://connectinghearts2013.blogspot.com/">Connecting Hearts</a>
+          <a class="dropdown-item" href="https://selfiepoetry2017.blogspot.com/">Selfie Poetry</a>
+        </div>
+      </nav>
     </div>
-</nav>
+  </header>
 
-        </div>
 
-        <div>
-            <h1 style="color:whitesmoke; position: absolute;  top: 30%; left: 50%; transform: translate(-50%, -50%);">Programming and writing are something I am passionate about!</h1>
-        <img src="images/pexels-negative-space-169573.jpg" width="100%" class="fluid bg-img">
-       
-    </img>
-        </div>
 
-        <!-- Optional JavaScript -->
+  
+
+  <main class="px-3">
+    <h1>Hello, I'm Vishal Ingle.</h1>
+    <p class="lead">
+        I'm a Developer & Business Analyst based in India.<br />
+        I love to explore and learn new things. Programming and writting is something I'm passionate about.
+    </p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">About me</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>&#169; Vishal Ingle</p>
+  </footer>
+</div>
+
+ <!-- Optional JavaScript -->
         <script src="js/index.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -87,7 +126,6 @@
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    </body>
-
+            crossorigin="anonymous"></script>     
+  </body>
 </html>
