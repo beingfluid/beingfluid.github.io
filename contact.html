@@ -1,12 +1,8 @@
  <main class="px-3">
-   <p></p>
-    <p class="lead">
-        <b>Mobile/WhatsApp Number: </b><br>+91-8999450094
-    </p>
-    <p class="lead">
-        <b>Email Address: </b><br>vishal.ingle@beingfluid.in
-    </p>
-    <p class="lead">
-        <b>Website: </b><br>https://beingfluid.in/
-    </p>
+    <p></p>
+    <div ng-repeat="cinfo in contactinfo">
+         <p class="lead">
+            <b>{{cinfo.label}}: </b><br>{{cinfo.value}}
+        </p>
+    </div>
   </main>

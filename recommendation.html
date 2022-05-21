@@ -1,0 +1,17 @@
+ <main class="px-3">
+    <p></p>
+   
+    <div ng-repeat="recinfo in recommendations" class="row d-flex justify-content-center align-items-center h-100">
+          <div class="card-body">
+              <blockquote class="blockquote">
+                  <span class="lead font-italic">
+                      {{recinfo.message}}
+                  </span>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                {{recinfo.name}} ({{recinfo.title}})
+              </figcaption>
+          </div>
+    </div>
+ 
+  </main>

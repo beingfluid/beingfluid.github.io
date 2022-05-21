@@ -4,7 +4,6 @@ angular.module( 'being-fluid' )
 RoutesConfig.$inject = ["$routeProvider"];
 
 function RoutesConfig ( $routeProvider ) {
-    console.log( "here" );
     $routeProvider
         .when( '/home', {
             templateUrl: '../home.html',
@@ -13,7 +12,11 @@ function RoutesConfig ( $routeProvider ) {
     } ).when( '/about', {
        template: "<about></about>"
     } ).when( '/contact', {
-       templateUrl: '../contact.html'
+        templateUrl: '../contact.html',
+        controller: 'ContactController'
+    } ).when( '/recommendation', {
+        templateUrl: '../recommendation.html',
+        controller: 'RecommendationController'
     } ).otherwise( {
         redirectTo:"/home"
     });
