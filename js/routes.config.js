@@ -17,6 +17,9 @@ function RoutesConfig ( $routeProvider ) {
     } ).when( '/recommendation', {
         templateUrl: '../recommendation.html',
         controller: 'RecommendationController'
+    } ).when( '/projects', {
+        templateUrl: '../projects.html',
+        controller: 'ProjectsController'
     } ).otherwise( {
         redirectTo:"/home"
     });
