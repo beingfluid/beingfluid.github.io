@@ -20,6 +20,9 @@ function RoutesConfig ( $routeProvider ) {
     } ).when( '/projects', {
         templateUrl: '../projects.html',
         controller: 'ProjectsController'
+    } ).when( '/awards', {
+        templateUrl: '../awards.html',
+        controller: 'AwardsController'
     } ).otherwise( {
         redirectTo:"/home"
     });
