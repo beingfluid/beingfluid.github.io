@@ -142,7 +142,7 @@
   var Shuffle = window.Shuffle;
   var jQuery = window.jQuery;
 
-  var myShuffle = new Shuffle(document.querySelector(".shuffle-wrapper"), {
+  var myShuffle = new Shuffle(document.querySelector(".shuffle-wrapper")[0], {
     itemSelector: ".shuffle-item",
     buffer: 1,
   });
