@@ -1,0 +1,35 @@
+@use "../variables";
+@use "../mixins" as m;
+
+.navigation{
+  padding: 40px 130px;
+  transition: .3s ease;
+  &.nav-bg {
+    background-color: variables.$primary-color;
+    padding: 15px 100px;
+    @include m.desktop {
+      padding: 15px 20px;
+    }
+  }
+  @include m.desktop {
+    padding: 20px;
+    background: variables.$primary-color;
+  }
+}
+
+.navbar{
+  .nav-item{
+    .nav-link{
+      font-family: variables.$secondary-font;
+      text-transform: uppercase;
+      padding: 15px;
+    }
+    &.active{
+      font-weight: bold;
+    }
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: variables.$white;
+}

@@ -1,146 +1,23 @@
-<!doctype html>
-<html lang="en" ng-app="being-fluid">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Being Fluid">
-    <meta name="author" content="Vishal Ingle">
-   
-    <title>Being Fluid</title>
+---
+layout: default
+---
 
- <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+{% include hero-section.html %}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+{% include about-section.html %}
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+{% include skills-section.html %}
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+{% include experience-section.html %}
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+{% include education-section.html %}
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+{% include services-section.html %}
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-      
-    </style>
+{% include portfolio-section.html %}
 
-    
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+{% include testimonial-section.html %}
 
-  </head>
-  <body style="background-image:url('images/cover2.jpg');" class="h-100 text-center text-white bg-dark">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <a href="#!/home">
-      <img style="height:auto;" class="w-25 img-fluid img-thumbnail rounded" src="docs/Logo.png" alt="Being Fluid">
-      </a>
-     <!--<h3 class="float-md-start mb-0">Being Fluid</h3>--> 
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="#!/home">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#!/about">About me</a>
-<!--         <a class="nav-link fw-bold py-1 px-0" href="docs/Resume_Vishal Ingle.pdf">Resume</a> -->
-        <a class="nav-link fw-bold py-1 px-0 dropdown"  href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a> 
-        <a class="nav-link fw-bold py-1 px-0" href="#!/recommendation">Recommendations</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#!/awards">Honors & awards</a> 
-         <a class="nav-link fw-bold py-1 px-0" href="#!/projects">Projects</a> 
-        <a class="nav-link fw-bold py-1 px-0" href="#!/contact">Contact</a> 
-       <!-- My Blogs -->
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="https://beingfluid.github.io/IntegrateNow/">IntegrateNow</a>
-          <a class="dropdown-item" href=" https://howtoreadthedocs.blogspot.com/">How to read the Docs</a>
-          <a class="dropdown-item" href="https://beingfluid.github.io/You-Dont-Know-SN-APIs/">You Dont Know SN APIs</a>
-          <a class="dropdown-item" href="https://community.servicenow.com/community?id=community_user_profile&user=fe53c574dbbc84102be0a851ca961908">Now Community</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://beingfluid.blogspot.com/">Being Fluid</a>
-          <a class="dropdown-item" href="https://connectinghearts2013.blogspot.com/">Connecting Hearts</a>
-          <a class="dropdown-item" href="https://selfiepoetry2017.blogspot.com/">Selfie Poetry</a>
-        </div>
-        
-      </nav>
-    </div>
-  </header>
+{% include client-section.html %}
 
-<!--Start-->
-    <div ng-controller="MainController as ctrl">
-      <div ng-view>
-        
-      </div>
-     <!--End-->
-  <p></p>
-  <footer style="background-image:url('images/cover2.jpg');  position: fixed; right: 0; bottom: 0; left: 0; padding: 0.1rem; text-align: center;">
-    <p>&#169; Vishal Ingle</p>
-</footer>
-</div>
-
-</div>
-
- <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>     
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js" integrity="sha512-28WMav3WUIziq1D5l+8y2BrzN+CJgEeIyLksiKOSHWofTgaZc3RMPzvleRhXbLwnzf/C7Xnb0W6pE8PlqeRSog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js" integrity="sha512-Verh3o2plvhEbk/ct46ThMyRkWOeokouYUg2N8BH6DYphkBhespORMmgTg7MuNBbYKZ1zzit+44K6lzXVcMBmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="js/app.js"></script>
-            <script src="js/router.controller.js"></script>
-            <script src="js/routes.config.js"></script>
-            <script src="js/home.controller.js"></script>
-            <script src="js/about.component.js"></script>
-            <script src="js/about.controller.js"></script>
-            <script src="js/contact.controller.js"></script>
-    <script src="js/awards.controller.js"></script>
-            <script src="js/recommendation.controller.js"></script>
-            <script src="js/projects.controller.js"></script>
-          </body>
-</html>
+{% include blog-section.html %}

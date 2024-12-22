@@ -1,0 +1,35 @@
+---
+---
+
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	Project Name
+VERSION:	Versoin Number
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+@use 'variables';
+
+@use 'mixins';
+
+@use 'typography';
+
+@use 'buttons';
+
+@use 'common';
+
+@use 'templates/navigation';
+
+@use 'templates/hero-area';
+
+@use 'templates/homepage';
+
+@use 'templates/blog';
+
+@use 'templates/about';
+
+@use 'templates/portfolio';
