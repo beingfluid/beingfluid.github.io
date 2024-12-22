@@ -142,15 +142,22 @@
   var Shuffle = window.Shuffle;
   var jQuery = window.jQuery;
 
-  var myShuffle = new Shuffle(document.querySelector(".shuffle-wrapper")[0], {
+  var shuffleWrapper = document.querySelector(".shuffle-wrapper");
+
+if (shuffleWrapper) {
+  var myShuffle = new Shuffle(shuffleWrapper, {
     itemSelector: ".shuffle-item",
     buffer: 1,
   });
+} else {
+  console.error("Shuffle wrapper element not found.");
+}
+
 
   jQuery('input[name="shuffle-filter"]').on("change", function (evt) {
     var input = evt.currentTarget;
     if (input.checked) {
-      myShuffle.filter(input.value);
+      shuffleWrapper.filter(input.value);
     }
   });
 })(jQuery);
