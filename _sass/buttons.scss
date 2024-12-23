@@ -1,10 +1,10 @@
 @use "sass:color";
-@use "variables";
+@use "variables" as v;
 
 /* Button style */
 .btn {
   font-size: 22px;
-  font-family: variables.$secondary-font;
+  font-family: v.$secondary-font;
   text-transform: capitalize;
   padding: 16px 44px;
   border-radius: 5px;
@@ -35,20 +35,20 @@
 }
 
 .btn-primary {
-  background: variables.$primary-color;
-  color: variables.$white;
+  background: v.$primary-color;
+  color: v.$white;
 
   &:active {
-    background: color.adjust($color: variables.$primary-color, $lightness: 10%) !important;
+    background: color.adjust($color: v.$primary-color, $lightness: 10%) !important;
   }
 
   &:hover {
-    background: color.adjust($color: variables.$primary-color, $lightness: 10%);
+    background: color.adjust($color: v.$primary-color, $lightness: 10%);
   }
 
   &.focus,
   &.active {
-    background: color.adjust($color: variables.$primary-color, $lightness: 10%) !important;
+    background: color.adjust($color: v.$primary-color, $lightness: 10%) !important;
     box-shadow: none !important;
   }
 }
@@ -56,11 +56,11 @@
 
 .btn-transparent {
   background: transparent;
-  color: variables.$primary-color;
+  color: v.$primary-color;
   font-weight: bold;
 
   &:active,
   &:hover {
-    color: variables.$primary-color;
+    color: v.$primary-color;
   }
 }

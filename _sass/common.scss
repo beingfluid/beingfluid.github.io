@@ -1,14 +1,14 @@
 @use "sass:color";
-@use "variables";
+@use "variables" as v;
 
 body {
-  background-color: variables.$body-color;
+  background-color: v.$body-color;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: color.adjust($color: variables.$primary-color, $lightness: 10%);
-  color: variables.$white;
+  background: color.adjust($color: v.$primary-color, $lightness: 10%);
+  color: v.$white;
 }
 
 /* preloader */
@@ -19,7 +19,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: variables.$white;
+  background-color: v.$white;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -56,12 +56,12 @@ select {
 
 a.text-dark{
   &:hover{
-    color: variables.$primary-color !important;
+    color: v.$primary-color !important;
   }
 }
 
 a:hover {
-  color: variables.$primary-color;
+  color: v.$primary-color;
 }
 
 .slick-slide {
@@ -74,7 +74,7 @@ a:hover {
 
   &-title {
     margin-bottom: 80px;
-    font-family: variables.$secondary-font;
+    font-family: v.$secondary-font;
   }
 }
 
@@ -96,7 +96,7 @@ a:hover {
     width: 100%;
     top: 0;
     left: 0;
-    background: variables.$black;
+    background: v.$black;
     opacity: .5;
   }
 }
@@ -110,27 +110,27 @@ a:hover {
 }
 
 .bg-primary {
-  background: variables.$primary-color !important;
+  background: v.$primary-color !important;
 }
 
 .bg-gray{
-  background: variables.$gray !important;
+  background: v.$gray !important;
 }
 
 .text-primary {
-  color: variables.$primary-color !important;
+  color: v.$primary-color !important;
 }
 
 .text-color {
-  color: variables.$text-color;
+  color: v.$text-color;
 }
 
 .text-dark {
-  color: variables.$text-color-dark !important;
+  color: v.$text-color-dark !important;
 }
 
 .text-light {
-  color: variables.$text-color-light !important;
+  color: v.$text-color-light !important;
 }
 
 .mb-10 {
@@ -186,11 +186,11 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: variables.$secondary-font !important;
+  font-family: v.$secondary-font !important;
 }
 
 .font-tertiary {
-  font-family: variables.$secondary-font !important;
+  font-family: v.$secondary-font !important;
 }
 
 .shadow {
@@ -228,14 +228,14 @@ a:hover {
     margin: 2px;
     &.slick-active{
       button{
-        background: variables.$white;
+        background: v.$white;
         width: 25px;
       }
     }
     button{
       height: 6px;
       width: 12px;
-      background: rgba($color: variables.$white, $alpha: .5);
+      background: rgba($color: v.$white, $alpha: .5);
       color: transparent;
       border-radius: 10px;
       overflow: hidden;
@@ -250,10 +250,10 @@ a:hover {
 .form-control{
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid variables.$border-color;
+  border-bottom: 1px solid v.$border-color;
   height: 60px;
   &:focus{
-    border-color: variables.$primary-color;
+    border-color: v.$primary-color;
     outline: 0;
     box-shadow: none !important;
   }

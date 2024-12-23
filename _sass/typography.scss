@@ -1,33 +1,31 @@
+@use "variables" as v;
 @use "mixins" as m;
-@use "variables";
+
 /*  typography */
-
-
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400');
-
 
 body {
   line-height: 1.2;
-  font-family: variables.$primary-font;
+  font-family: v.$primary-font;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: variables.$text-color;
+  color: v.$text-color;
 }
 
 p, .paragraph {
   font-weight: 400;
-  color: variables.$text-color;
+  color: v.$text-color;
   font-size: 15px;
   line-height: 1.8;
-  font-family: variables.$primary-font;
+  font-family: v.$primary-font;
   &-lg{
     font-size: 22px;
   }
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: variables.$text-color-dark;
-  font-family: variables.$secondary-font;
+  color: v.$text-color-dark;
+  font-family: v.$secondary-font;
   line-height: 1.2;
 }
 

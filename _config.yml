@@ -22,7 +22,6 @@ include:
   - _pages
 
 sass:
-  sass_dir: assets/scss
   style: compressed
 
 # Exclude from processing.

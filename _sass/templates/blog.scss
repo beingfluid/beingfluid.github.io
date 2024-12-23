@@ -1,5 +1,5 @@
+@use "variables" as v;
 @use "mixins" as m;
-@use "variables";
 
 .card-lg {
   flex-direction: row-reverse;
@@ -13,8 +13,8 @@
 blockquote > p {
   display: inline-block;
   padding: 10px 20px;
-  background: variables.$gray;
-  border-left: 2px solid variables.$primary-color;
+  background: v.$gray;
+  border-left: 2px solid v.$primary-color;
   font-style: italic;
   font-size: 22px;
   line-height: inherit;
@@ -26,10 +26,10 @@ blockquote > p {
   }
 
   strong {
-    font-family: variables.$secondary-font;
+    font-family: v.$secondary-font;
     font-size: 22px;
     font-weight: normal;
-    color: variables.$text-color-dark;
+    color: v.$text-color-dark;
     display: inherit;
     line-height: 1.5;
   }
