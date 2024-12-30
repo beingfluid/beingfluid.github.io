@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel-="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
 </head>
 
@@ -210,40 +211,96 @@
   </div>
 </section>
 
+
 <section class="py-24 bg-white position-relative"
   style="background-image: url('pstls-assets/images/testimonials/testimonial-2-shadow.png'); background-size: cover; background-repeat: no-repeat; background-position: center">
   <div class="container">
-    <div class="d-md-flex mb-10 pt-20 px-12 px-md-24 pb-16 bg-dark">
-      <div class="mb-6 mb-md-3 me-md-8"><img src="pstls-assets/icons/testimonials-quote.svg" alt=""></div>
-      <div>
-        <h2 class="mb-10 lh-sm text-white mw-3xl font-heading">I have had the pleasure of working with
-          Vishal for nearly 2 years. In that time he has proved to be a conscientious developer who is
-          engaged in in our complex operations, always willing to go the extra mile to get results and
-          resolve issues to complete satisfaction. His calm nature, with patience &amp;
-          professionalism makes working with Vishal very easy. Vishal has a great ability to manage
-          relationships with both customers and his internal team to obtain the best from any topic.
-          He has a good understanding of the ServiceNow environment, with a willingness to help
-          educate others. I can’t honestly evaluate his technical work at a technical level, however I
-          do know the output is always meeting our needs, works well with improvements implimented as
-          proposed by Vishal to bring added value. I have no hesitation in recommending Vishal as he
-          is a fine team member to have on board.</h2>
-        <h5 class="mb-1 fw-bold lh-lg text-white font-heading">Ted Flemming</h5>
-        <span class="mb-6 text-muted small d-block">ITSM Process Owner at Airbus</span>
-        <a class="border border-3 p-1 d-inline-block rounded-circle border-primary" href="#"><img class="img-fluid"
-            src="pstls-assets/images/testimonials/woman-circle.png" alt=""></a><a class="p-1 p-sm-0 d-inline-block"
-          href="#"><img class="img-fluid px-sm-4" src="pstls-assets/images/testimonials/woman-2-circle.png"
-            alt=""></a><a class="p-1 p-sm-0" href="#"><img class="img-fluid"
-            src="pstls-assets/images/testimonials/man-circle.png" alt=""></a>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        
+        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"
+          class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        
+        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+          class="" aria-current=""
+          aria-label="Slide 2"></button>
+        
+        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+          class="" aria-current=""
+          aria-label="Slide 3"></button>
+        
       </div>
+
+      <!-- Carousel Inner (Slides) -->
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <div class="d-md-flex mb-10 pt-20 px-12 px-md-24 pb-16 bg-dark">
+            <div class="mb-6 mb-md-3 me-md-8">
+              <img src="pstls-assets/icons/testimonials-quote.svg" alt="">
+            </div>
+            <div>
+              <h5 class="mb-10 lh-sm text-white mw-3xl font-heading">
+                I have had the pleasure of working with Vishal for nearly 2 years. In that time he has proved to be a conscientious
+developer who is engaged in in our complex operations, always willing to go the extra mile to get results and resolve
+issues to complete satisfaction. His calm nature, with patience & professionalism makes working with Vishal very easy.
+Vishal has a great ability to manage relationships with both customers and his internal team to obtain the best from any
+topic. He has a good understanding of the ServiceNow environment, with a willingness to help educate others. I can’t
+honestly evaluate his technical work at a technical level, however I do know the output is always meeting our needs,
+works well with improvements implimented as proposed by Vishal to bring added value. I have no hesitation in
+recommending Vishal as he is a fine team member to have on board.
+              </h5>
+              <h6 class="mb-1 fw-bold lh-lg text-white font-heading">Ted Flemming</h6>
+              <span class="mb-6 text-muted small d-block">ITSM Process Owner at Airbus</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item ">
+          <div class="d-md-flex mb-10 pt-20 px-12 px-md-24 pb-16 bg-dark">
+            <div class="mb-6 mb-md-3 me-md-8">
+              <img src="pstls-assets/icons/testimonials-quote.svg" alt="">
+            </div>
+            <div>
+              <h5 class="mb-10 lh-sm text-white mw-3xl font-heading">
+                "This is a fantastic service!"
+              </h5>
+              <h6 class="mb-1 fw-bold lh-lg text-white font-heading">Ted Flemming</h6>
+              <span class="mb-6 text-muted small d-block">ITSM Process Owner at Airbus</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item ">
+          <div class="d-md-flex mb-10 pt-20 px-12 px-md-24 pb-16 bg-dark">
+            <div class="mb-6 mb-md-3 me-md-8">
+              <img src="pstls-assets/icons/testimonials-quote.svg" alt="">
+            </div>
+            <div>
+              <h5 class="mb-10 lh-sm text-white mw-3xl font-heading">
+                "This is a fantastic service!"
+              </h5>
+              <h6 class="mb-1 fw-bold lh-lg text-white font-heading">Ted Flemming</h6>
+              <span class="mb-6 text-muted small d-block">ITSM Process Owner at Airbus</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div>
-      <ul class="list-unstyled mb-0 d-flex justify-content-center">
-        <li class="d-flex me-2"><a class="p-1 bg-primary transform-rotate-45deg" href="#"></a></li>
-        <li class="d-flex me-2"><a class="p-1 transform-rotate-45deg bg-primary-dark" href="#"></a></li>
-        <li class="d-flex me-2"><a class="p-1 bg-primary transform-rotate-45deg" href="#"></a></li>
-        <li class="d-flex"><a class="p-1 bg-primary transform-rotate-45deg" href="#"></a></li>
-      </ul>
-    </div>
+
   </div>
 </section>
 

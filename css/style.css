@@ -1,0 +1,16 @@
+.testimonials-slider {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.testimonial blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0 0 10px;
+}
+
+.testimonial footer {
+    font-size: 1rem;
+    color: #6c757d;
+}
