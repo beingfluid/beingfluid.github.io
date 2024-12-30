@@ -1,3 +1,5 @@
 collections:
   testimonials:
     output: true
+  certifications:
+    output: true
