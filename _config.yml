@@ -3,3 +3,7 @@ collections:
     output: true
   certifications:
     output: true
+  profile_links:
+    output: true
+  aboutme:
+    output: true
