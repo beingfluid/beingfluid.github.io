@@ -9,3 +9,5 @@ collections:
     output: true
   honors:
     output: true
+  blogs:
+    output: true
