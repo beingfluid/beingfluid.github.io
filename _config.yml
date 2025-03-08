@@ -7,3 +7,5 @@ collections:
     output: true
   aboutme:
     output: true
+  honors:
+    output: true

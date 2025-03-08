@@ -1,0 +1,22 @@
+---
+layout: default
+title: Honors
+---
+
+<section class="honors-awards py-24 text-center bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-primary">Honors & Awards</h2>
+    <div class="row justify-content-center">
+      {% for honor in site.honors %}
+      <div class="col-12 col-md-6 mb-4">
+        <div class="card border-0 shadow p-4">
+          <h5 class="text-dark">{{ honor.title }}</h5>
+          <p class="text-muted">{{ honor.issuer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style></style>

@@ -8,17 +8,16 @@ title: Certifications
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4 mb-20 mt-lg-0">
         <ul class="list-unstyled mb-0">
-          {% assign categories = "all," %} {% for cert in site.certifications %}
-          {% unless categories contains cert.category %} {% assign categories =
+          {% assign categories = "" %} {% for cert in site.certifications %} {%
+          unless categories contains cert.category %} {% assign categories =
           categories | append: cert.category | append: "," %} {% endunless %} {%
           endfor %} {% assign categories = categories | split: "," %} {% for
           category in categories %} {% assign cert_count = site.certifications |
-          where: "category", category | size %} {% if category == "all" %} {%
-          assign cert_count = site.certifications | size%} {% endif %}
+          where: "category", category | size %}
 
           <li class="mb-6 mb-xl-10">
             <a
-              class="{% if category == 'all' %}link-dark{% else %}link-primary{% endif %} h2 text-decoration-none lh-sm"
+              class="link-primary h2 text-decoration-none lh-sm"
               href="#{{ category }}"
             >
               {{ category }}
@@ -40,12 +39,14 @@ title: Certifications
           <div
             id="{{ category }}"
             class="cert-list"
-            style="display: {% if category == 'all' %} grid {% else %} none {% endif %}; 
-           grid-template-columns: repeat(2, 1fr); 
-           gap: 2px;"
+            style="
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 2px;
+            "
           >
-            {% for cert in site.certifications %} {% if category == "all" or
-            cert.category == category %}
+            {% for cert in site.certifications %} {% if cert.category ==
+            category %}
             <div class="">
               <div class="card">
                 <img
